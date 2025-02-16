@@ -14,5 +14,6 @@ public class Main {
         frame.setVisible(true); // ✅ Properly placed here
 
         gamePanel.startGame();
+        System.out.println("Game started"); // ✅ Debug print
     }
 }

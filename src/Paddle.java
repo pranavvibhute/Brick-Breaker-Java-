@@ -39,4 +39,12 @@ public class Paddle {
     public Rectangle getBounds() {
         return new Rectangle(x, y, width, height);
     }
+
+    public void expand() {
+        this.width = Math.min(this.width + 40, 200); // Max width 200px
+    }
+    
+    public void shrink() {
+        this.width = Math.max(this.width - 40, 80); // Min width 80px
+    }
 }
